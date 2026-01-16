@@ -3081,19 +3081,6 @@ public class Screen extends JFrame {
         conector_dialog.dispose();
     }//GEN-LAST:event_confirmConector_btnMouseClicked
 
-    public static void main(String args[]) {
-        try {
-            javax.swing.UIManager.setLookAndFeel(new com.formdev.flatlaf.FlatLightLaf());
-        } catch (UnsupportedLookAndFeelException ex) {
-        }
-
-        java.awt.EventQueue.invokeLater(() -> {
-            Screen screen = new Screen();
-            screen.setLocationRelativeTo(null);
-            screen.setVisible(true);
-        });
-    }
-
     private void actualizarVista(JPanel panel) {
         panel.revalidate();
         panel.repaint();
