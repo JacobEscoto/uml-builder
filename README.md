@@ -1,22 +1,30 @@
-# Editor y Creador de Diagramas | Generador de Clases
----
-### Funcionalidades del Programa
-- [x] Drag and Drop
-- [x] Agregar Elementos de Diagrama
-- [x] Crear Variable
-- [x] Crear Proceso
-- [x] Crear Clase
-- [x] Implementar Herencia
-- [x] Crear Propiedades
-- [x] Crear Metodos
-- [x] Cambiar Propiedades | Estilo del Elemento
-- [x] Generar Codigo en C++
-- [x] Guardar Archivo
-- [x] Abrir Archivo
-- [x] Exportar a PDF
+# 🧰 UML BUILDER
 
----
+![Screenshot](resources/sample.png)
 
-### Librerías Utilizadas
-1. FlatLaf 3.1.1 (Look and Feel)
-2. Apache PDFBox 3.0.5
+## 📍 Description
+
+A Java Swing Application for creating **``UML``** Diagrams and Classes. 
+
+## 📋 Characteristics
+
+- Create Basic UML Diagrams with options of Start, End, Processes, Variables, Operations, Loops, Decisions
+- Create UML Classes with Attributes, Methods and Inheritance.
+- Change Element Figure style (Font, Background, Foreground, Size).
+- File persistence for saving and working on later.
+- Export to PDF Options.
+- Generate C++ Basic Code.
+
+## ⚙ Installation
+
+```bash
+git clone https://github.com/JacobEscoto/uml-to-cpp.git
+cd uml-to-cpp
+code .    //For Working in VS Code
+```
+
+## 📦 External Libraries Used
+
+- FlatLaf (Look & Feel)
+- Ikonli Core, Swing and Material Design (Icons)
+- Apache PDFBox
