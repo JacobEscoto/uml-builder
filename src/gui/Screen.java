@@ -46,6 +46,9 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.graphics.image.LosslessFactory;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
+import org.kordamp.ikonli.materialdesign2.MaterialDesignC;
+import org.kordamp.ikonli.materialdesign2.MaterialDesignF;
+import org.kordamp.ikonli.swing.FontIcon;
 
 public class Screen extends JFrame {
 
@@ -1122,9 +1125,7 @@ public class Screen extends JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("UML Editor");
-        setMaximumSize(new java.awt.Dimension(1280, 720));
         setMinimumSize(new java.awt.Dimension(1280, 720));
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1887,6 +1888,7 @@ public class Screen extends JFrame {
         fileOptions_jm.setText("Archivo");
 
         newFile_jmi.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        newFile_jmi.setIcon(FontIcon.of(MaterialDesignF.FILE_DOCUMENT_PLUS_OUTLINE, 18, Color.BLACK));
         newFile_jmi.setText("Nuevo");
         newFile_jmi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1896,6 +1898,7 @@ public class Screen extends JFrame {
         fileOptions_jm.add(newFile_jmi);
 
         openFile_jmi.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        openFile_jmi.setIcon(FontIcon.of(MaterialDesignF.FOLDER_OPEN_OUTLINE, 18, Color.BLACK));
         openFile_jmi.setText("Abrir");
         openFile_jmi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1905,6 +1908,8 @@ public class Screen extends JFrame {
         fileOptions_jm.add(openFile_jmi);
 
         saveFile_jmi.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        saveFile_jmi.setIcon(FontIcon.of(MaterialDesignC.CONTENT_SAVE_OUTLINE, 18, Color.BLACK)
+        );
         saveFile_jmi.setText("Guardar");
         saveFile_jmi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
